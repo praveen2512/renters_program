@@ -4,7 +4,7 @@ import Quote from './components/pages/Quote';
 import Login from './components/pages/Login';
 import Header from './components/sections/Header';
 
-const initialState = {};
+//const initialState = {};
 
 export default class App extends React.Component {
 
