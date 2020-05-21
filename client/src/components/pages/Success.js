@@ -1,9 +1,8 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
-import { Grid, List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText } from '@material-ui/core';
 import Footer from '../sections/Footer';
 
 export default class Success extends React.Component {
@@ -15,7 +14,7 @@ export default class Success extends React.Component {
 
   render() {
 
-    const { firstName, lastName, email, occupation, city, bio } = this.props.values;
+    const { firstName, lastName, email} = this.props.values;
 
     return (
 
