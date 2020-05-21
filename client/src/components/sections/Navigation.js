@@ -4,7 +4,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Chip from '@material-ui/core/Chip';
 import HomeIcon from '@material-ui/icons/Home';
 
-import {CheckCircle, NearMe, PlaylistAddCheck } from '@material-ui/icons';
+import {CheckCircle, PlaylistAddCheck } from '@material-ui/icons';
 
 const StyledBreadcrumb = withStyles((theme) => ({
     root: {
@@ -22,10 +22,6 @@ const StyledBreadcrumb = withStyles((theme) => ({
     },
 }))(Chip); // TypeScript only: need a type cast here because https://github.com/Microsoft/TypeScript/issues/26591
 
-function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
-}
 
 export default function Navigation(props) {
 
@@ -40,10 +36,10 @@ export default function Navigation(props) {
             <Breadcrumbs aria-label="breadcrumb">
                     {
                         navList.map((nav) => {
-                            var disabled = false
+                            //var disabled = false
                             console.log("STEP ", props.step);
                             if(nav.step > props.step){
-                                disabled = true;
+                                //disabled = true;
                                 return (
                                     <StyledBreadcrumb key={nav.step} icon={<HomeIcon fontSize="small" />} component="a" href="#" label={nav.title} onClick={() => props.jumpToStep(nav.step)} 
                                     disabled/>
@@ -59,35 +55,6 @@ export default function Navigation(props) {
                         })
                     }
                 
-            
-                {/*<StyledBreadcrumb
-                    component="a"
-                    href="#"
-                    label="Policy Details"
-                    icon={<HomeIcon fontSize="small" />}
-                    onClick={() => props.jumpToStep(1)}
-                />
-                <StyledBreadcrumb component="a" href="#" label="Insured Details" onClick={() => props.jumpToStep(2)} />
-                <StyledBreadcrumb
-                    label="Location Details"
-                    deleteIcon={<ExpandMoreIcon />}
-                    onClick={() => props.jumpToStep(3)}
-                />
-                <StyledBreadcrumb
-                    label="Location Details"
-                    deleteIcon={<ExpandMoreIcon />}
-                    onClick={() => props.jumpToStep(4)}
-                />
-                <StyledBreadcrumb
-                    label="Coverage Details"
-                    deleteIcon={<ExpandMoreIcon />}
-                    onClick={() => props.jumpToStep(5)}
-                />
-                <StyledBreadcrumb
-                    label="Summary"
-                    deleteIcon={<ExpandMoreIcon />}
-                    onClick={() => props.jumpToStep(6)}
-                />*/}
             </Breadcrumbs>
         </div>
     );
