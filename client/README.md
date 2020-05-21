@@ -1,4 +1,4 @@
-# Solartis Policy Adminstration forReact Step Form
+# Solartis Policy Adminstration for
 
 > System to Rate and Create Quote Solartis Renters Program
 
