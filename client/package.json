@@ -1,0 +1,34 @@
+{
+  "name": "solartis_renters_program_ui_ux",
+  "version": "1.0.0",
+  "description": "Solartis Policy Adminstration for Renters Program",
+  "author": "praveenkumar@solartis.com",
+  "private": true,
+  "dependencies": {
+    "@date-io/core": "^2.6.0",
+    "@date-io/date-fns": "^2.6.1",
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/styles": "^4.9.13",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
