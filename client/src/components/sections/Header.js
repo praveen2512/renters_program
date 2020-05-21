@@ -16,8 +16,8 @@ export default class Header extends Component {
                     <Toolbar>
 
                         <Typography variant="h6" style={{ flexGrow: 1 }}>
-                            <a href="https://solartis.com" target="_blank">
-                                <img src={Logo}></img>
+                            <a href="https://solartis.com" target="_blank" rel="noopener noreferrer">
+                                <img src={Logo} alt="Solartis"></img>
                             </a>
                         </Typography>
                         <Button color="inherit" onClick={logout} title="Logout">Logout</Button>
