@@ -1,4 +1,4 @@
-# Solartis Policy Adminstration for
+# Solartis Policy Adminstration
 
 > System to Rate and Create Quote Solartis Renters Program
 
