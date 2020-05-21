@@ -6,7 +6,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Footer from '../sections/Footer';
 import { Grid } from '@material-ui/core/';
 //import DateFnsUtils from '@date-io/date-fns';
-import { MuiPickersUtilsProvider, KeyboardDatePicker,} from '@material-ui/pickers';
+//import { MuiPickersUtilsProvider, KeyboardDatePicker} from '@material-ui/pickers';
 
 export default class PolicyDetail extends React.Component {
 
@@ -22,7 +22,6 @@ export default class PolicyDetail extends React.Component {
 
   render() {
 
-    const classes = {};
     const { values, handleChange } = this.props;
 
     return (
