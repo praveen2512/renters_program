@@ -21,7 +21,7 @@ export default class Login extends React.Component {
                 <div className="col-md-6 login-aside" style={{ backgroundImage: "URL(../../resources/images/login-bg-1.jpg)" }}>
                   <div className="row">
                     <div className="col-md-5 ">
-                      <a className="kt-login__logo">
+                      <a className="kt-login__logo" href="https://solartis.com" target="_blank" rel="noopener noreferrer">
                         <img alt="Solartis" src={Logo} className="login-logo-big" width="171" />
                       </a>
                     </div>
@@ -37,8 +37,8 @@ export default class Login extends React.Component {
                       © 2020 Solartis. All Rights Reserved.
                 </div>
                     <span className="login-copyright col-md-6">
-                      <a href="https://www.solartis.com/privacy-policy/" className="pull-right" target="_blank">Privacy</a>
-                      <a href="https://www.solartis.com/legal/" className="pull-right" target="_blank">Terms</a>
+                      <a href="https://www.solartis.com/privacy-policy/" className="pull-right" target="_blank" rel="noopener noreferrer">Privacy</a>
+                      <a href="https://www.solartis.com/legal/" className="pull-right" target="_blank" rel="noopener noreferrer">Terms</a>
                     </span>
                   </div>
                 </div>
